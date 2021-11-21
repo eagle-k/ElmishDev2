@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="styles.scss" />
+    <Content Include="index.html" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+
+  <ItemGroup />
+
+  <ItemGroup>
+    <PackageReference Include="Fable.Elmish.Debugger" Version="3.3.0" />
+    <PackageReference Include="Fable.Elmish.HMR" Version="4.3.1" />
+    <PackageReference Include="Fable.Elmish.React" Version="3.0.1" />
+    <PackageReference Include="Feliz" Version="1.56.0" />
+  </ItemGroup>
+
+</Project>
